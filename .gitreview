@@ -1,0 +1,7 @@
+[gerrit]
+host=psp.sdlc.rd.realtek.com
+port=29418
+project=test/test
+defaultbranch=master
+defaultremote=origin
+
