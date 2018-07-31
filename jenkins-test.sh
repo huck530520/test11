@@ -5,6 +5,8 @@
 # Shun-Yen Lu
 #
 
+export LC_ALL=C
+
 if [ "$GERRIT_PROJECT" != "" ]; then
   repo download $GERRIT_PROJECT $GERRIT_CHANGE_NUMBER/$GERRIT_PATCHSET_NUMBER
 fi
