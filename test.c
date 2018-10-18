@@ -3,6 +3,6 @@
 int main()
 {
   int not_used; /* declared but not used variable. */
-  printf ("Hello Jenkins\n");
+  printf ("Hello Jenkins2\n");
   return 0;
 }
