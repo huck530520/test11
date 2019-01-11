@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f8b09717_5db41f75",
+        "filename": "test.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000001
+      },
+      "writtenOn": "2019-01-11T03:47:07Z",
+      "side": 1,
+      "message": "???? comment",
+      "revId": "86272c6edf38e0496891bdb31aa9ffb3a32b16b0",
+      "serverId": "cba6afc6-c2f8-4aa7-9156-2305fed670f8",
+      "unresolved": false
+    }
+  ]
+}
