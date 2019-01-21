@@ -4,8 +4,8 @@ This is a repository for testing Gerrit operation.
 You can do anything here to test and try Gerrit server,
 such as uploading change to Gerrit, cod review and veriry.
 
-* [PSP SDLC Gerrit](http://psp.sdlc.rd.realtek.com/gerrit/)
-* [PSP SDLC Jenkins](http://psp.sdlc.rd.realtek.com/jenkins/)
+* [Codec SDLC Gerrit](http://codec.sdlc.rd.realtek.com/gerrit/)
+* [Codec SDLC Jenkins](http://codec.sdlc.rd.realtek.com/jenkins/)
 
 # Quick Start
 

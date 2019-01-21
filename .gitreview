@@ -1,5 +1,5 @@
 [gerrit]
-host=psp.sdlc.rd.realtek.com
+host=codec.sdlc.rd.realtek.com
 port=29418
 project=test/test
 defaultbranch=master
