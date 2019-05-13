@@ -6,5 +6,6 @@ int main()
   int a;
   printf ("Hello Jenkins\n");
   printf("%d",a);
+  printf("%d",a);
   return 0;
 }
