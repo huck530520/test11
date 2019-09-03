@@ -1,4 +1,7 @@
 int test4(int a, int b)
 {
-    return (a>=b?a:b)<<2;
+    int c;
+    c = a>=b?a:b;
+    c = c << 2;
+    return c;
 }
