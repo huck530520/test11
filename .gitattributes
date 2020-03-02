@@ -1,3 +1,0 @@
-xxx.img filter=lfs diff=lfs merge=lfs -text
-yyy.img filter=lfs diff=lfs merge=lfs -text
-yyy.img.sig filter=lfs diff=lfs merge=lfs -text
