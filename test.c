@@ -13,5 +13,7 @@ int main()
 
   printf ("Hello Jenkins\n");
   printf("%d",a);
+
+  printf ("Modified test.c\n");
   return 0;
 }
