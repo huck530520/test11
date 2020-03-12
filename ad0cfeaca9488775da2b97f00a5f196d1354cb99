@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5bab1475_b74df413",
+        "filename": "test.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000129
+      },
+      "writtenOn": "2020-03-12T06:17:05Z",
+      "side": 1,
+      "message": "not good",
+      "range": {
+        "startLine": 14,
+        "startChar": 11,
+        "endLine": 14,
+        "endChar": 16
+      },
+      "revId": "ad0cfeaca9488775da2b97f00a5f196d1354cb99",
+      "serverId": "cba6afc6-c2f8-4aa7-9156-2305fed670f8",
+      "unresolved": false
+    }
+  ]
+}
