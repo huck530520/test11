@@ -17,3 +17,8 @@ int main()
   printf ("Modified test.c\n");
   return 0;
 }
+
+void func_dog(void)
+{
+    printf("I like dog very much");
+}
