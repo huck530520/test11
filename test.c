@@ -13,5 +13,6 @@ int main()
 
   printf ("Hello Jenkins\n");
   printf("%d",a);
+  print("YC_Test");
   return 0;
 }
