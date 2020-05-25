@@ -5,7 +5,7 @@ int main()
   // robert: add a comment to test git/repo/gerrit
   int not_used; /* declared but not used variable. */
   int a;
-  int b;
+  int b, c;
 
   a = 1;
   b = a + 2;
