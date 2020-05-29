@@ -12,6 +12,7 @@ int main()
   a = b << 2;
 
   printf ("Hello Jenkins\n");
+  printf ("Hello Jenkins\n");
   printf("%d",a);
 
   printf ("Modified test.c\n");
