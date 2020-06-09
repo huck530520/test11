@@ -9,6 +9,7 @@ int main()
 
   a = 1;
   b = a + 2;
+  b = a + 2;
   a = b << 2;
 
   printf ("Hello Jenkins\n");
