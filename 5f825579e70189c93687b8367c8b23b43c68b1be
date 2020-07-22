@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "02145849_957a9bb9",
+        "filename": "helloworld.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000099
+      },
+      "writtenOn": "2020-07-22T09:46:19Z",
+      "side": 1,
+      "message": "this is a test comment",
+      "range": {
+        "startLine": 7,
+        "startChar": 2,
+        "endLine": 7,
+        "endChar": 33
+      },
+      "revId": "5f825579e70189c93687b8367c8b23b43c68b1be",
+      "serverId": "cba6afc6-c2f8-4aa7-9156-2305fed670f8",
+      "unresolved": false
+    }
+  ]
+}
