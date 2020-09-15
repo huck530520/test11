@@ -6,6 +6,7 @@ int main()
   int not_used; /* declared but not used variable. */
   int a;
   int b, c, d;
+  haha
 
   a = 1;
   b = a + 2;
