@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-haha
+haha2
 int main()
 {
   // robert: add a comment to test git/repo/gerrit
