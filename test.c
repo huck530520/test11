@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+haha
 int main()
 {
   // robert: add a comment to test git/repo/gerrit
