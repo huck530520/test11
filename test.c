@@ -2,7 +2,7 @@
 
 int main()
 {
-    // private change test
+    // git review  test
   // robert: add a comment to test git/repo/gerrit
   int not_used; /* declared but not used variable. */
   int a;
