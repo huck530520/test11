@@ -2,6 +2,7 @@
 
 int main()
 {
+ // just for test ,will be delete later
   // robert: add a comment to test git/repo/gerrit
   int not_used; /* declared but not used variable. */
   int a;
