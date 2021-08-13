@@ -8,7 +8,7 @@ int main()
   int b, c, d;
 
   a = 1;
-  b = a + 2;
+  b = a + 8;
   a = b << 2;
 
   printf ("Hello Jenkins\n");
