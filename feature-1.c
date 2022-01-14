@@ -1,7 +1,4 @@
 int main() {
-    // 123
-    // 456
-    // 789
-    // to cherry pick
+    printf("rtos-3.1.0 beta 0.1");
     retun 0;
 }
