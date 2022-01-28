@@ -1,5 +1,5 @@
 int main() {
-    printf("pipeline from SC 2M");
+    printf("pipeline from SC2M");
     int *p;
     p = 123;
     return 0;
