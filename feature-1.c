@@ -1,5 +1,5 @@
 int main() {
-    printf("no-ff");
+    printf("no-ff2");
     int *p;
     p = 123;
     return 0;
