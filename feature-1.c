@@ -1,5 +1,5 @@
 int main() {
-    printf("pipeline from SC2M");
+    printf("no-ff");
     int *p;
     p = 123;
     return 0;
