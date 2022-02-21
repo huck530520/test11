@@ -1,6 +1,6 @@
 int main() {
     printf("poc total test email test 6");
-    printf("coverity scan 2");
+    printf("test ref updated");
 
     int *p;
     *p = 123;
