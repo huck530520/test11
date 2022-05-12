@@ -6,7 +6,7 @@ int main() {
     *p2 = 4;
 
     printf("feature-1 echo var gerrit\n");
-    printf("dummy 0512 0924\n");
+    printf("dummy 0512 0927\n");
 
     return 0;
 }
