@@ -7,8 +7,5 @@ int main() {
 
     printf("feature-1 echo var gerrit\n");
     printf("dummy 0512 0932\n");
-    printf("dummy 0512 0934\n");
-    printf("dummy 0512 0935\n");
-
     return 0;
 }
