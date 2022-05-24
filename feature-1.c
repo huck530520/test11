@@ -5,6 +5,6 @@ int main() {
     int *p2;
     *p2 = 4;
 
-    printf("trigger by comment added on gerrit-dup-2\n");
+    printf("trigger by comment added on gerrit-dup-3\n");
     return 0;
 }
