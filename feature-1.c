@@ -5,6 +5,6 @@ int main() {
     int *p2;
     *p2 = 4;
 
-    printf("add patchset\n");
+    printf("trigger by comment added\n");
     return 0;
 }
