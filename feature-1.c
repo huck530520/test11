@@ -1,4 +1,5 @@
 int main() {
+    printf("%s", "test sync");
     int *p;
     *p = 123;
 
