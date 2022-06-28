@@ -1,6 +1,4 @@
 int main() {
-    printf("poc total test email test 6");
-
     int *p;
     *p = 123;
 
