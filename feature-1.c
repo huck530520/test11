@@ -1,5 +1,5 @@
 int main() {
-    printf("%s", "test sync 1626");
+    printf("%s", "test sync 1627");
     int *p;
     *p = 123;
 
