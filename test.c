@@ -1,23 +1,21 @@
 #include <stdio.h>
 
-int main()
-{
-  // robert: add a comment to test git/repo/gerrit
-  int not_used; /* declared but not used variable. */
-  int a;
-  int b, c, d;
-
-  a = 1;
-  b = a + 2;
-  a = b << 2;
-
-  printf ("Hello Jenkins\n");
-  printf ("Hello Jenkins\n");
-  printf("%d",a);
-
-  printf ("Test https\n");
-  printf ("Modified test.c\n");
-  printf ("Modified test.c again\n");
-  printf ("Modified test.c again and again\n");
-  return 0;
+char newbase(void){
+	char earc_port = 0;
+	unsigned int i = 0;
+	while (--i >= 0){
+		earc_port = 'b';
+		return 'a';
+	}
+	return 'c';
 }
+
+int main() {
+	int *p;
+	*p = 3;
+
+	newbase();
+
+	return 0;
+}
+
