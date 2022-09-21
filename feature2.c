@@ -6,5 +6,9 @@ int main() {
     // add 2
     int *p;
     *p = 5;
+
+    int *q;
+    *q = 5;
+
     return 0;
 }
