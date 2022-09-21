@@ -3,7 +3,7 @@ int main() {
     *p = 5;
 
     //int *q;
-    //*q = 6;
+    //*q = 7;
     // test ref update
     // test cherry
 
