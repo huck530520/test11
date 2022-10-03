@@ -20,8 +20,8 @@ int main() {
     int *p;
     *p = 3;
 
-    int *p2;
-    *p2 = 4;
+    //int *p2;
+    //*p2 = 4;
 
     out_of_bound_access(2048);
 
