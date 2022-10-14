@@ -17,7 +17,6 @@ void out_of_bound_access(int data_len) {
 }
 
 int main() {
-
     //int *p2;
     //*p2 = 4;
 
