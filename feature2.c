@@ -3,7 +3,6 @@ int main() {
     *p = 5;
     *p = 7;
 
-    //int *q;
     //test review 1
     //test review 2
 
