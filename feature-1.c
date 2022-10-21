@@ -24,7 +24,6 @@ int main() {
 
     //add patch
     //add patch2
-    //add patch3
 
     out_of_bound_access(2048);
     printf("trigger by comment added on gerrit-dup-4\n");
