@@ -29,6 +29,7 @@ int main() {
     // debug 5
     // debug 6
     // debug 7
+    // debug 8
 
     out_of_bound_access(2048);
     printf("trigger by comment added on gerrit-dup-4\n");
