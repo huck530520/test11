@@ -23,14 +23,6 @@ int main() {
     *p2 = 4;
 
     // debug
-    // debug 2
-    // debug 3
-    // debug 4
-    // debug 5
-    // debug 6
-    // debug 7
-    // debug 8
-    // debug 9
 
     out_of_bound_access(2048);
     printf("trigger by comment added on gerrit-dup-4\n");
