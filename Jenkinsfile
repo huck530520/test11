@@ -6,7 +6,7 @@ pipeline {
         stage ("test-1") {
             steps {
                 sh """
-                   pwd && ls -al
+                    echo helloworld
                 """
             }
         }
