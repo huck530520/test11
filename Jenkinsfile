@@ -4,7 +4,9 @@ pipeline {
     }
     stages {
         stage ("test-branch") {
-            print env.BRANCH_NAME
+            steps {
+                print env.BRANCH_NAME
+            }
         }
         stage ("when-branch") {
             when {
