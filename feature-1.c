@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 
-
+/*
 typedef unsigned char   uint8_t;
 
 void out_of_bound_access(int data_len) {
@@ -16,14 +16,15 @@ void out_of_bound_access(int data_len) {
 
     memcpy(buf, data, data_len);
 }
-
+*/
 
 int main() {
+/*
     int *p2 = malloc(sizeof(int));
     *p2 = 4;
 
     out_of_bound_access(2048);
     printf("trigger by comment added on gerrit-dup-4\n");
-
+*/
     return 0;
 }
