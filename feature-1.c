@@ -24,6 +24,7 @@ int main() {
     *p2 = 4;
 
     *p2 = 100;
+    *p3 = 101;
 
     out_of_bound_access(2048);
     printf("trigger by comment added on gerrit-dup-4\n");
