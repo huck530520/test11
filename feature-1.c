@@ -22,7 +22,7 @@ int main() {
 
     *p2 = 100;
 
-    out_of_bound_access(2048);
+    //out_of_bound_access(2048);
     printf("trigger by comment added on gerrit-dup-4\n");
     return 0;
 }
