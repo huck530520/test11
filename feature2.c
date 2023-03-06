@@ -5,5 +5,7 @@ int main() {
     *p = 6;
     *p = 999;
 
+    free(p);
+
     return 0;
 }
