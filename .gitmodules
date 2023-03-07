@@ -1,0 +1,4 @@
+[submodule "reference/submodule"]
+	path = reference/submodule
+	url = ssh://ctcsoc.rtkbf.com:29418/test/test
+	branch = sandbox/reycheng/submodule
