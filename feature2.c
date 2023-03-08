@@ -13,5 +13,8 @@ int main() {
     *s = 999;
     *s = 1000;
 
+    int *t;
+    *t = 0;
+
     return 0;
 }
