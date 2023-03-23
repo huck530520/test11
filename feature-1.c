@@ -16,6 +16,7 @@ void out_of_bound_access(int data_len) {
     memcpy(buf, data, data_len);
 }
 
+
 int main() {
     int *p2 = malloc(sizeof(int));
     *p2 = 4;
