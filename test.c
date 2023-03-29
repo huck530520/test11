@@ -20,5 +20,9 @@ int main()
   printf ("Modified test.c\n");
   printf ("Modified test.c again\n");
   printf ("Modified test.c again and again\n");
+
+  int *q;
+  *q = 0;
+
   return 0;
 }
