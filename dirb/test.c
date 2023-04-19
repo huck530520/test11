@@ -1,4 +1,4 @@
 
-int main() {
+int mainb() {
 return 0;
 }
