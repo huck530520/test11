@@ -26,5 +26,6 @@ int main() {
     printf("trigger by comment added on gerrit-dup-4\n");
     //ldd
 
+    // haha real-dangling
     return 0;
 }
