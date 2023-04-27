@@ -26,6 +26,7 @@ int main() {
     printf("trigger by comment added on gerrit-dup-4\n");
     // 2nd
     // 3rd
+    // 4th
 
     return 0;
 }
