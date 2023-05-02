@@ -24,6 +24,10 @@ int main() {
 
     out_of_bound_access(2048);
     printf("trigger by comment added on gerrit-dup-4\n");
+<<<<<<< HEAD
+=======
+    //ooo ldd
+>>>>>>> e9d04e3 (dangling)
 
     return 0;
 }
