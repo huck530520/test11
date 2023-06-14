@@ -1,0 +1,13 @@
+{
+"coverity_scan_path": "",
+"coverity_host": "172.21.15.146",
+"coverity_port": "8080",
+"coverity_report_path": "/home/reycheng/cov-reports-2022.12/bin",
+"coverity_analyze_defects_options": [["impact:High"], ["impact:Medium"]],
+"coverity_defects_assign_policy": "author",
+"coverity_analyze_rtkonly": false,
+"triage_ignored": false,
+"coverity_stream": "CTCSOC_test_verify",
+"coverity_build_dir": ".coverity/build",
+"coverity_build_root": ""
+}
