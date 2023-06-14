@@ -8,6 +8,7 @@
 "coverity_analyze_rtkonly": false,
 "triage_ignored": false,
 "coverity_stream": "CTCSOC_test_verify",
-"coverity_build_dir": ".coverity/build",
+"coverity_build_dir": "/home/reycheng/.jenkins/workspace/freestyle/coverity-analysis/.coverity/build",
+"//coverity_build_dir": ".coverity/build",
 "coverity_build_root": ""
 }
