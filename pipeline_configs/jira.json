@@ -1,1 +1,13 @@
-{"site_name": "jiraqa.realtek.com", "defects_jira_project": "CTCTESTCOV", "defects_issue_epic": "CTCSOC_test", "defects_issue_type": "Task", "defects_default_assignee": "reycheng1", "defects_extra_fields": {}, "defects_customization": "", "defects_number_limit": 0, "defects_assign_policy": "author", "coverity_project_name": "CTCSOC_test"}
+{
+"site_name": "jiraqa.realtek.com", 
+"defects_jira_project": "CTCTESTCOV", 
+"defects_issue_epic": "CTCSOC_test", 
+"defects_issue_type": "Task", 
+"defects_default_assignee": "reycheng1", 
+"defects_extra_watcher": "",
+"defects_extra_fields": {}, 
+"defects_customization": "", 
+"defects_number_limit": 0, 
+"defects_assign_policy": "author", 
+"coverity_project_name": "CTCSOC_test"
+}
