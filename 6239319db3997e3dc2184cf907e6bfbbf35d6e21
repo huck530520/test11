@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e5662032_21658b01",
+        "filename": "dummy.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1000325
+      },
+      "writtenOn": "2023-06-15T05:38:48Z",
+      "side": 0,
+      "message": "comment line 1\ncomment line 2",
+      "revId": "6239319db3997e3dc2184cf907e6bfbbf35d6e21",
+      "serverId": "cba6afc6-c2f8-4aa7-9156-2305fed670f8",
+      "unresolved": false
+    }
+  ]
+}
