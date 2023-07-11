@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="origin"
+          fetch="ssh://cn3wd3.rtkbf.com:29418/"
+          review="http://cn3wd3.rtkbf.com/gerrit"
+          revision="personal/jheyilin/mlo"
+  />
+
+  <remote name="nsnam"
+          fetch="https://gitlab.com/"
+  />
+  
+  <default revision="master" />
+  
+  <!-- =================== Projects ========================= -->
+  <project remote="nsnam" name="nsnam/ns-3-dev" path="protected/ns3" dest-branch="personal/jheyilin/mlo" />
+ 
+</manifest>
