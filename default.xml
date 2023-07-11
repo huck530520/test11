@@ -7,12 +7,12 @@
   />
 
   <remote name="nsnam"
-          fetch="https://gitlab.com/"
+          fetch="https://gitlab.com/nsnam"
   />
   
   <default revision="master" />
   
   <!-- =================== Projects ========================= -->
-  <project remote="nsnam" name="nsnam/ns-3-dev" path="protected/ns3" dest-branch="personal/jheyilin/mlo" />
+  <project remote="nsnam" name="ns-3-dev" path="protected/ns3" dest-branch="personal/jheyilin/mlo" />
  
 </manifest>
