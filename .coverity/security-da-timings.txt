@@ -1,0 +1,9 @@
+# Version: 72aa62ce0f p-2022.12-push-63
+# Command Line: /home/reycheng/cov-analysis-linux64-2022.12.0/bin/cov-security-da --dir /home/reycheng/git-test/mainModule/.coverity
+timer                         ms      calls
+-------------------------------------------
+cov_security_da::run           0          1
+
+activity                      ms      calls
+-------------------------------------------
+cov_security_da::run           0          1

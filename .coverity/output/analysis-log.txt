@@ -1,0 +1,156 @@
+cmdline: command line: /home/reycheng/cov-analysis-linux64-2022.12.0/bin/cov-analyze --dir .coverity 
+cmdline: parsed cmdline: [
+cmdline:   { name: "dir", args: [ ".coverity" ] },
+cmdline: ]
+startup: am_pid=306337
+startup: detected platform: Linux 5.15.0-67-generic x86_64
+startup: target platform: linux64
+startup: Detected 1 logical cpus
+startup: Detected 1 cpu cores
+startup: host name: reycheng-VirtualBox
+startup: user name: reycheng
+startup: Analysis version: 2022.12.0 (72aa62ce0f p-2022.12-push-63)
+startup: temp directory: /tmp/cov-reycheng/8320cfda06eae12427be3d6a4bcd9b83
+startup: enable_constraint_fpp=0
+startup: current time: 2023-Mar-29 16:37:06
+startup: Detected amount of memory: 4018472kb
+startup: Limiting memory to 3616624kb
+flexlm: using license server: papyrus.realtek.com
+Sigma checker-properties info: Capturing Sigma checker properties...
+Sigma checker-properties info: Command line for sigma /home/reycheng/cov-analysis-linux64-2022.12.0/sigma/bin/sigma internal-coverity-integration checker-properties --protocol-version 1 /tmp/cov-reycheng/8320cfda06eae12427be3d6a4bcd9b83/sigma-checker-properties.json
+Sigma checker-properties info: Exit status: code 0
+Sigma checker-properties info: Loaded 2568 checker properties for Sigma.
+wlink: Identifying web applications
+wlink: Linking web-app archive bytecode
+wlink: Web-app linker scanned 0 web-apps (found: 0 classfiles, 0 jars, and 0 other files)
+wlink: Webapps domains found: 0 Android app domains found: 1
+emitdb: callgraph.cpp:2515 11111111
+emitdb: callgraph.cpp:2545 11000011
+emitdb: callgraph.cpp:2565 11000011
+codexm: Initializing data gathered from CodeXM
+directives: ===== User directives:
+directives: === Language: apex
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: cpp
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: cs
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: cuda
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: fortran
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: go
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: java
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: javascript
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: kotlin
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: objc
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: php
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: python2
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: python3
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: ruby
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: scala
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: swift
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: text-files
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: typescript
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+directives: === Language: vb
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+rta: Not running RTA because it doesn't apply to current languages
+emitdb: callgraph.cpp:2583 11000000
+dyncg: N/A or no data
+general: Starting analysis
+Sigma stdout: Copyright (c) 2022 Synopsys, Inc.
+Sigma stdout: For documentation and support, visit https://community.synopsys.com/s/document-item?bundleId=sigma-ug
+Sigma stdout: By using this software, the user accepts the terms of Synopsys' end user software license and maintenance agreement found at: https://www.synopsys.com/company/legal/software-integrity.html
+Sigma stdout: 
+Sigma analysis info: Running sigma analysis...
+Sigma analysis info: Using Sigma version: 2022.11.1
+Sigma analysis info: Command line for sigma /home/reycheng/cov-analysis-linux64-2022.12.0/sigma/bin/sigma --config /home/reycheng/git-test/mainModule/.coverity/output/sigma-config.json --parse-timeout 3000000 analyze --include-all /home/reycheng/git-test/mainModule/.coverity/output/sigma
+Sigma analysis info: List of disabled Sigma checkers: certificate_verification_disabled_core_java, certificate_verification_disabled_node_https, certificate_verification_disabled_node_request_reject_unauthorized, certificate_verification_disabled_node_restify, certificate_verification_disabled_node_tls, certificate_verification_disabled_node_ws, certificate_verification_disabled_sequelize, certificate_verification_disabled_sequelize_mssql, certificate_verification_disabled_socket_io, el_injection_core_java, hardcoded_secret_pattern, header_injection_core_java, insecure_block_cipher_algorithm_core_java, insecure_cipher_node_crypto, insecure_tls_version_core_java, insufficient_password_hash_iterations_node_crypto, java_code_injection_core_java, jcr_injection_core_java, jsp_sql_injection_core_java, ldap_injection_core_java, missing_secure_attribute_core_java, missing_secure_attribute_servlet, missing_secure_attribute_session_cookie_servlet, missing_secure_attribute_session_cookie_servlet_xml, missing_secure_attribute_session_cookie_spring_boot_properties, missing_secure_attribute_session_cookie_spring_boot_yaml, nosql_query_injection_core_java, ognl_injection_core_java, open_redirect_core_java, os_cmd_injection_core_java, path_manipulation_core_java, regex_injection_core_java, script_code_injection_core_java, session_fixation_core_java, sqli_core_java, tainted_environment_with_execution_core_java, trust_boundary_violation_core_java, unknown_language_injection_core_java, unrestricted_database_access_android, unrestricted_dispatch_core_java, unrestricted_file_access_android, unrestricted_postmessage_target_javascript_window, unsafe_deserialization_core_java, unsafe_jni_core_java, unsafe_named_query_core_java, unsafe_reflection_core_java, url_manipulation_core_java, xpath_injection_core_java
+Sigma analysis info: Files dumped: 1
+Sigma analysis info: Exit status: 0
+Sigma stdout: Copyright (c) 2022 Synopsys, Inc.
+Sigma stdout: For documentation and support, visit https://community.synopsys.com/s/document-item?bundleId=sigma-ug
+Sigma stdout: By using this software, the user accepts the terms of Synopsys' end user software license and maintenance agreement found at: https://www.synopsys.com/company/legal/software-integrity.html
+Sigma stdout: 
+Sigma stdout: 2023-03-29 08:37:08 INFO Analysis done in 0 seconds
+Sigma stdout: 2023-03-29 08:37:08 INFO Found 0 defects
+Sigma stdout: 
+Sigma stdout: Identified
+Sigma stdout: 
+Sigma stdout: │File Type│Occurrences│
+Sigma stdout: ├─────────┼───────────┤
+Sigma stdout: │C        │          1│
+Sigma stdout: 
+Sigma stdout: 
+Sigma stdout: No issues found after 0 seconds
+Sigma stdout: 
+dm-access-lib: AM listening for DM at 127.0.0.1:39617
+dm-access-lib: AM starting DM with command line: /home/reycheng/cov-analysis-linux64-2022.12.0/bin/cov-internal-dm --AM-port 39617 --log-file /home/reycheng/git-test/mainModule/.coverity/output/distributor.log -j 1 --AW-timeout 36000 /home/reycheng/cov-analysis-linux64-2022.12.0/bin/cov-analyze --worker --message-size-limit 104857600
+dm-access-lib: DM started: dm_pid=306359
+dm-access-lib: AM got connection from DM: (local) 127.0.0.1:39617 - 127.0.0.1:45874 (remote)
+makeWUP: ENABLE_ONLY0
+makeWUP: stat0
+makeWUP: stat1
+wurlegend: <phase><n> dw_id wup_bytes dw_ms wur_bytes aw_ms [mem] paths (rest are labeled)
+wur: stat1 1 1038 607 72 0 mem=128032768 max=220823552 1 n: batch 0
+makeWUP: stat2
+makeWUP: gen0
+makeWUP: gen1
+wur: gen1 1 4933 145 442 145 14 n: main in TU 1
+makeWUP: gen2
+makeWUP: PER_TU0
+makeWUP: PER_TU1
+makeWUP: PER_TU2
+summary: Analysis summary report:
+summary: ------------------------
+summary: Files analyzed                 : 1 Total
+summary:     C                          : 1
+summary: Total LoC input to cov-analyze : 1839
+summary: Functions analyzed             : 1
+summary: Paths analyzed                 : 14
+summary: Time taken by analysis         : 00:00:03
+summary: Defect occurrences found       : 1 UNINIT
+summary: TU Language    Capture    TU Count
+summary: -----------    -------    --------
+summary: C              Build         1
+summary: Number of functions: 1
+summary: out_of_memory count: 0
+summary: paths_exceeded count: 0
+summary: recoverable failures: 0
+summary: c-wu-time-milliseconds: 771
+summary: all-wu-time-milliseconds: 771
+mem: AM peak mem bytes: 430096384
+assert: suppressed asserts: workers=0, master=0
+failures: recoverable failures: workers=0, master=0

@@ -1,0 +1,31 @@
+1680079028.237: DM started: dm_pid=306359
+1680079028.237: DM command line: /home/reycheng/cov-analysis-linux64-2022.12.0/bin/cov-internal-dm --AM-port 39617 --log-file /home/reycheng/git-test/mainModule/.coverity/output/distributor.log -j 1 --AW-timeout 36000 /home/reycheng/cov-analysis-linux64-2022.12.0/bin/cov-analyze --worker --message-size-limit 104857600
+1680079028.237: Connecting to AM at 127.0.0.1:39617
+1680079028.237: Connected to AM: (local) 127.0.0.1:45874 - 127.0.0.1:39617 (remote)
+1680079028.237: Listening for DWs at 127.0.0.1:42197
+1680079028.237: Setting up for 1 local workers and 0 remote workers.
+1680079028.237: Starting DW 1 with command line: /home/reycheng/cov-analysis-linux64-2022.12.0/bin/cov-internal-dw --DM-port 42197 --DW-id 1
+1680079028.237: DW 1 started: dw_pid=306362
+1680079028.251: DW 1 log: 1680079028.251: Connecting to DM on 127.0.0.1:42197
+1680079028.251: DW 1 log: 1680079028.251: Connected to the DM: (local) 127.0.0.1:32882 - 127.0.0.1:42197 (remote)
+1680079028.251: DW 1 log: 1680079028.251: Sending DWDM_INIT: dw_id=1, benchmark=0
+1680079028.251: Received a connection from a DW: 127.0.0.1:32882
+1680079028.251: Received DWDM_INIT: dw_id=1, benchmark=0
+1680079028.251: Stopping to listen for new DWs
+1680079028.251: Sending DMDW_INIT to DW 1: aw_command_line=["/home/reycheng/cov-analysis-linux64-2022.12.0/bin/cov-analyze","--worker","--message-size-limit","104857600"], dw_env=[], aw_image=(empty), awFaults=[], awTimeoutSeconds=36000
+1680079028.252: DW 1 log: 1680079028.251: Received DMDW_INIT: aw_command_line=["/home/reycheng/cov-analysis-linux64-2022.12.0/bin/cov-analyze","--worker","--message-size-limit","104857600"], dw_env=[], aw_image=(empty), awFaults=[], awTimeoutSeconds=36000
+1680079028.252: DW 1 log: 1680079028.251: Started listening for AW at 127.0.0.1:37429
+1680079028.252: DW 1 log: 1680079028.251: Starting AW with command line (COVERITY_DW_PORT=37429): /home/reycheng/cov-analysis-linux64-2022.12.0/bin/cov-analyze --worker --message-size-limit 104857600
+1680079028.252: DW 1 log: 1680079028.251: AW started: aw_pid=306364
+1680079028.257: DW 1 log: 1680079028.257: DW 1 received connection from AW: (local) 127.0.0.1:37429 - 127.0.0.1:40546 (remote)
+1680079029.016: AM closed the connection, DM shutting down
+1680079029.016: Disconnecting DW 1
+1680079029.018: DW 1 log: 1680079029.018: DW 1: the DM closed the connection, DW shutting down
+1680079029.018: DW 1 log: 1680079029.018: DW 1 summary: aw_starts=1, wurs_sent=2, total_awms=145, total_dwms=752
+1680079029.018: DW 1 log: 1680079029.018: Disconnecting AW
+1680079029.033: DW 1 log: 1680079029.033: AW exited with code 0
+1680079029.033: DW 1 log: AW peak mem bytes: 275124224
+1680079029.033: DW 1 exited with code 0
+1680079029.033: dm-summary: elapsed_time_ms=796, am_to_dm_wus=2, dm_to_am_wurs=2
+1680079029.033: dw-summary: dw_id=1, state=inactive, wus_outstanding=0, wus_sent=2, wurs_received=2, active_ms=758, idle_ms=2
+1680079029.033: DM exiting with code 0

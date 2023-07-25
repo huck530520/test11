@@ -1,0 +1,1 @@
+[LOG] Command line: /home/reycheng/cov-analysis-linux64-2022.12.0/bin/cov-blame --dir .coverity --preview-report preview_report_v2.json --scm git --owner-assignment-rules line -V 4

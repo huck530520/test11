@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE coverity SYSTEM "config.dtd">
+<coverity>
+
+<metrics>
+    <metric>
+        <name>time</name>
+        <value>7</value>
+    </metric>
+    <metric>
+        <name>args</name>
+        <value>/home/reycheng/cov-analysis-linux64-2022.12.0/bin/cov-build --dir .coverity --config .coverity/config.xml sh build.sh</value>
+    </metric>
+    <metric>
+        <name>host</name>
+        <value>reycheng-VirtualBox</value>
+    </metric>
+    <metric>
+        <name>short-platform</name>
+        <value>linux64</value>
+    </metric>
+    <metric>
+        <name>platform</name>
+        <value>Linux 5.15.0-67-generic x86_64</value>
+    </metric>
+    <metric>
+        <name>ident</name>
+        <value>2022.12.0 (build 72aa62ce0f p-2022.12-push-63)</value>
+    </metric>
+    <metric>
+        <name>user</name>
+        <value>reycheng</value>
+    </metric>
+    <metric>
+        <name>cwd</name>
+        <value>/home/reycheng/git-test/mainModule</value>
+    </metric>
+    <metric>
+        <name>config</name>
+        <value>/home/reycheng/git-test/mainModule/.coverity/config.xml</value>
+    </metric>
+    <metric>
+        <name>intermediatedir</name>
+        <value>/home/reycheng/git-test/mainModule/.coverity</value>
+    </metric>
+    <metric>
+        <name>outputdir</name>
+        <value>/home/reycheng/git-test/mainModule/.coverity/output</value>
+    </metric>
+    <metric>
+        <name>emitdir</name>
+        <value>/home/reycheng/git-test/mainModule/.coverity/emit</value>
+    </metric>
+    <metric>
+        <name>force</name>
+        <value>no</value>
+    </metric>
+    <metric>
+        <name>cygwin</name>
+        <value>no</value>
+    </metric>
+    <metric>
+        <name>failures</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>successes</name>
+        <value>1</value>
+    </metric>
+    <metric>
+        <name>recoverable-errors</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>dotnet-webapps-detected</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>dotnet-webapp-successes</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>dotnet-webapp-compilation-secs</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>buildcmd</name>
+        <value>sh build.sh</value>
+    </metric>
+</metrics>
+</coverity>

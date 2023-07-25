@@ -1,0 +1,10 @@
+/home/reycheng/cov-analysis-linux64-2022.12.0/bin/cov-analyze --dir .coverity 
+Analysis summary report:
+------------------------
+Files analyzed                 : 1 Total
+    C                          : 1
+Total LoC input to cov-analyze : 1839
+Functions analyzed             : 1
+Paths analyzed                 : 14
+Time taken by analysis         : 00:00:03
+Defect occurrences found       : 1 UNINIT

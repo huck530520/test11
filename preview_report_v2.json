@@ -1,0 +1,51 @@
+{
+  "header" : {
+    "format" : "commit preview report",
+    "version" : 2
+  },
+  "analysisInfo" : {
+    "ownerAssignmentRule" : "line",
+    "comparisonSnapshotId" : 51082,
+    "reportTimestamp" : "2023-03-29T08:37:11.788Z",
+    "user" : "admin",
+    "command" : "/home/reycheng/cov-analysis-linux64-2022.12.0/bin/cov-analyze --dir .coverity"
+  },
+  "issueInfo" : [ {
+    "cid" : 179977,
+    "mergeKey" : "0ed1976685e2d6b96157c5a2efe62042",
+    "presentInComparisonSnapshot" : true,
+    "firstDetectedDateTime" : "2022-05-24T08:41:07.909Z",
+    "occurrences" : [ {
+      "checker" : "UNINIT",
+      "file" : "/home/reycheng/git-test/mainModule/test.c",
+      "function" : "main",
+      "extra" : "q",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pointer_deref_write",
+      "mainEventLineNumber" : 25,
+      "mainEventDescription" : "Using uninitialized value \"q\".",
+      "componentName" : "dup2",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "C"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : "ctcsoc.admin",
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "CVSS_Severity" : null,
+      "CVSS_Vector" : null,
+      "CVSS attribute" : null,
+      "CVSS_Audited" : null,
+      "CVSS_Score" : null
+    },
+    "ownerLdapServerName" : "local"
+  } ]
+}

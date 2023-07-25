@@ -1,0 +1,22 @@
+# Version: 72aa62ce0f p-2022.12-push-63
+# Command Line: /home/reycheng/cov-analysis-linux64-2022.12.0/bin/cov-commit-defects --dir .coverity --url http://172.21.15.146:8080 --stream CTCSOC_test_test --scm git --auth-key-file /home/reycheng/auth-key.txt --encryption none --preview-report-v2 preview_report_v2.json
+timer                                      ms      calls
+--------------------------------------------------------
+cov-commit-defects                        605          1
+  set_working_domain                        0          1
+  send_analysis_and_build_metrics           2          1
+    open emit DB                            1          1
+  send_defects_v3                          15          1
+  send_filtering_report                     0          1
+  receive_preview_report_v2                 2          1
+  (left over)                             586
+
+activity                                   ms      calls
+--------------------------------------------------------
+cov-commit-defects                        605          1
+set_working_domain                          0          1
+send_analysis_and_build_metrics             2          1
+open emit DB                                1          1
+send_defects_v3                            15          1
+send_filtering_report                       0          1
+receive_preview_report_v2                   2          1

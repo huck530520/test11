@@ -1,0 +1,5 @@
+Translation unit:
+1 -> /home/reycheng/git-test/mainModule/test.c
+cov-emit invocation time (seconds): 0
+cov-translate invocation time (seconds): 7
+cov-build invocation time (seconds): 7

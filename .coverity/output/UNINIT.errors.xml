@@ -1,0 +1,26 @@
+<error>
+<domain>STATIC_C</domain>
+<lang>C</lang>
+<checker>UNINIT</checker>
+<type>uninit</type>
+<subtype>pointer_deref_write</subtype>
+<file>/home/reycheng/git-test/mainModule/test.c</file>
+<function>main</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>var_decl</tag>
+<description>{CovLStrv2{{t{Declaring variable {0} without initializer.}{{code{q}}}}}}</description>
+<line>24</line>
+<column>3</column>
+</event>
+<event>
+<main>true</main>
+<tag>uninit_use</tag>
+<description>{CovLStrv2{{t{Using uninitialized value {0}.}{{code{q}}}}}}</description>
+<line>25</line>
+<column>3</column>
+</event>
+<extra>q</extra>
+<subcategory>pointer_deref_write</subcategory>
+</error>

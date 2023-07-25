@@ -1,0 +1,10 @@
+Native Compiler invocation: /usr/bin/gcc test.c
+Working directory: /home/reycheng/git-test/mainModule
+Comptype: gcc
+* Configuring /usr/bin/gcc as a C compiler
+* Configuring /usr/bin/gcc as a C++ compiler
+* Configuring /usr/bin/gcc as a C compiler
+* Configuring /usr/bin/g++ as a C++ compiler
+* Configuring /usr/bin/g++ as a C compiler
+* Configuring /usr/bin/ld as a C++ linker
+* Configuring /usr/bin/ar as a C++ linker
