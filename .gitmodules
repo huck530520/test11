@@ -6,3 +6,7 @@
 	path = reference/submodule2
 	url = ssh://ctcsoc.rtkbf.com:29418/test/test
 	branch = sandbox/reycheng/submodule2
+[submodule "pipeline"]
+	path = pipeline
+	url = ssh://ctcsoc.rtkbf.com:29418/sdlc/jenkins-config
+	branch = sample/config-helloworld-submodule
