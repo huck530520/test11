@@ -21,6 +21,7 @@ int main() {
     int *p2;
     *p2 = 4;
     *p2 = 100;
+    free(p2);
 
     // patchset 1
     // patchset 2
