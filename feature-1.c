@@ -18,9 +18,9 @@ void out_of_bound_access(int data_len) {
 
 int main() {
 
-    //int *p2;
-    //*p2 = 4;
-    //*p2 = 100;
+    int *p2;
+    *p2 = 4;
+    *p2 = 100;
 
     // patchset 1
     // patchset 2
