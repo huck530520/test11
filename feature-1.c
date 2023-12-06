@@ -20,6 +20,7 @@ int main() {
 
     int *p2;
     *p2 = 4;
+    int p4;
     *p2 = 100;
 
     // patchset 1
