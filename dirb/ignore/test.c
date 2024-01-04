@@ -1,5 +1,5 @@
 int main() {
-    int *p = malloc(100);
-
+    int *p;
+    *p = 0;
     return 0;
 }
