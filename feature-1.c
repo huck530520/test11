@@ -17,12 +17,12 @@ void out_of_bound_access(int data_len) {
 }
 
 int main() {
-#pragma coverity compliance block deviate "UNINIT"
+//#pragma coverity compliance block deviate "UNINIT"
     int *p2;
     *p2 = 4;
     int p4;
     *p2 = 100;
-#pragma coverity compliance end_block "UNINIT"
+//#pragma coverity compliance end_block "UNINIT"
 
     // patchset 1
     // patchset 2
