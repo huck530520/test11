@@ -24,7 +24,6 @@ int main() {
     *p2 = 100;
 #pragma coverity compliance end_block "UNINIT"
 
-    // patchset 1
     out_of_bound_access(2048);
     printf("trigger by comment added on gerrit-dup-4\n");
 
