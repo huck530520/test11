@@ -5,8 +5,8 @@ int main() {
     int *p;
     *p = 6;
 
-    //char *ptr = malloc(10);
-    //std::cout << ptr[10];
+    char *ptr = malloc(10);
+    std::cout << ptr[10];
 
     return 0;
 }
