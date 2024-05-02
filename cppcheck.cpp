@@ -3,7 +3,7 @@
 int main() {
     std::cout << "Hello World!";
     int *p;
-    *p = 5;
+    *p = 6;
 
     //char *ptr = malloc(10);
     //std::cout << ptr[10];
