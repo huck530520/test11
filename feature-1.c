@@ -16,7 +16,6 @@ void out_of_bound_access(int data_len) {
     memcpy(buf, data, data_len);
 }
 
-
 int main() {
     int *p;
     *p = 0;
@@ -31,4 +30,6 @@ int main() {
     out_of_bound_access(2048);
 
     return 0;
+
+
 }
