@@ -4,6 +4,7 @@
 
 typedef unsigned char   uint8_t;
 
+/*
 void out_of_bound_access(int data_len) {
     static uint8_t *buf = NULL;
     char data[1024];
@@ -15,6 +16,7 @@ void out_of_bound_access(int data_len) {
 
     memcpy(buf, data, data_len);
 }
+*/
 int main() {
     int *p;
 
@@ -28,9 +30,7 @@ int main() {
 #pragma coverity compliance end_block "UNINIT"
 
     // test comment
-    out_of_bound_access(2048);
-
-
+    //out_of_bound_access(2048);
 
     return 0;
 }
