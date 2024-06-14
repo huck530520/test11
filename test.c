@@ -21,6 +21,7 @@ int main()
   printf ("Modified test.c again and again\n");
 
   int relation1;
+  int relation2;
 
   return 0;
 }
