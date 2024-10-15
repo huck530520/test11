@@ -18,20 +18,6 @@ void out_of_bound_access(int data_len) {
 
 int main() {
     int *p;
-
-    //p = malloc(sizeof(int));
-    *p = 0;
-#pragma coverity compliance block deviate "UNINIT"
-    int *p2;
-    *p2 = 4;
-    int p4;
-    *p2 = 100;
-#pragma coverity compliance end_block "UNINIT"
-
-    // test comment
-    //out_of_bound_access(2048);
-
-
-
+    free(p);
     return 0;
 }
