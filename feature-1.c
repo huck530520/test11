@@ -28,7 +28,7 @@ int main() {
 #pragma coverity compliance end_block "UNINIT"
 
     // test comment
-    //out_of_bound_access(2048);
+    out_of_bound_access(2048);
 
     return 0;
 }
