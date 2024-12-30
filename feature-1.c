@@ -8,28 +8,41 @@ void out_of_bound_access(int data_len) {
     char data[1024];
     memset(data, '\0', 1024);
 
-    if (data_len > 100) {
-        buf = malloc(100);
+    if (data_len > 0 && data_len <= 100) {
+        if (buf == NULL) {
+            buf = malloc(data_len);
+        } else if (data_len > 100) {
+            free(buf);
+            buf = malloc(100);
+        }
+    } else {
+        printf("Invalid data length\n");
+        return;
     }
 
-    memcpy(buf, data, data_len);
+    if (buf != NULL) {
+        memcpy(buf, data, data_len);
+    }
 }
 
 int main() {
-    int *p;
+    int *p = malloc(sizeof(int));
+    if (p != NULL) {
+        *p = 0;
+    }
 
-    //p = malloc(sizeof(int));
-    *p = 0;
-    //patch 1
-#pragma coverity compliance block deviate "UNINIT"
-    int *p2;
-    *p2 = 4;
-    int p4;
-    *p2 = 100;
-#pragma coverity compliance end_block "UNINIT"
+    int *p2 = malloc(sizeof(int));
+    if (p2 != NULL) {
+        *p2 = 4;
+        *p2 = 100;
+        free(p2);
+    }
 
-    // test comment
-    out_of_bound_access(2048);
+    if (p != NULL) {
+        free(p);
+    }
+
+    out_of_bound_access(1024);
 
     return 0;
 }
