@@ -20,7 +20,8 @@ int main() {
 
     //p = malloc(sizeof(int));
     *p = 0;
-    //patch 1
+    // patch 1
+    // patch 3
 #pragma coverity compliance block deviate "UNINIT"
     int *p2;
     *p2 = 4;
