@@ -7,7 +7,7 @@ int main()
   int a;
   int b, c, d;
 
-  a = 1;
+  a = 1
   b = a + 2;
   a = b << 2;
 
