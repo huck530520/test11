@@ -5,7 +5,7 @@ int main()
     // private change test
   // robert: add a comment to test git/repo/gerrit
   int a;
-  int b, c, d;
+  int b, c, d
 
   a = 1;
   b = a + 2;
