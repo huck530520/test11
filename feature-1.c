@@ -18,7 +18,10 @@ void out_of_bound_access(int data_len) {
 int main() {
     int *p;
 
-    //p = malloc(sizeof(int));
+    p = malloc(sizeof(int));
+    if (!p) {
+        return -1;
+    }
     *p = 0;
 #pragma coverity compliance block deviate "UNINIT"
     int *p2;
