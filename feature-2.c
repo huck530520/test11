@@ -18,6 +18,7 @@ void out_of_bound_access(int data_len) {
 
 int main() {
     int *p;
+    p = malloc(sizeof(int));
     free(p);
     return 0;
 }
