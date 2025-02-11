@@ -14,6 +14,8 @@ int main()
   printf ("Hello Jenkins\n");
   printf ("Hello Jenkins\n");
   printf("%d",a);
+  int *q;
+  *q = 999;
 
   printf ("Test https\n");
   printf ("Modified test.c\n");
