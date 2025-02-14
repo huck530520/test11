@@ -19,7 +19,7 @@ void out_of_bound_access(int data_len) {
 int main() {
     int *p;
 
-    *p = 0;
+    *p = 0o;
     // patch 1
     // patch 3
 #pragma coverity compliance block deviate "UNINIT"
