@@ -21,5 +21,7 @@ int main()
   printf ("Modified test.c again and again\n");
   printf ("Modified test.c again and again and again\n");
   printf ("Modified test.c again and again and again and again\n");
+  printf ("Modified test.c again and again and again and again and agian\n");
+  printf ("Modified test.c again and again and again and again and agian and again\n");
   return 0;
 }
