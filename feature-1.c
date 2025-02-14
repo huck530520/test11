@@ -10,26 +10,34 @@ void out_of_bound_access(int data_len) {
     memset(data, '\0', 1024);
 
     if (data_len > 100) {
+        buf = malloc(data_len); // allocate sufficient memory
+    } else {
         buf = malloc(100);
     }
 
-    memcpy(buf, data, data_len);
+    if (buf != NULL) { // check for allocation failure
+        memcpy(buf, data, data_len);
+        free(buf); // free allocated memory to prevent memory leak
+        buf = NULL;
+    }
 }
 
 int main() {
     int *p;
 
-    *p = 0;
-    // patch 1
-    // patch 3
-#pragma coverity compliance block deviate "UNINIT"
-    int *p2;
-    *p2 = 4;
-    int p4;
-    *p2 = 100;
-#pragma coverity compliance end_block "UNINIT"
+    p = malloc(sizeof(int));
+    if (p != NULL) { // check for allocation failure
+        *p = 0;
+        free(p); // free allocated memory to prevent memory leak
+    }
 
-    // test comment
+    int *p2 = malloc(sizeof(int)); // initialize p2 with allocated memory
+    if (p2 != NULL) { // check for allocation failure
+        *p2 = 4;
+        *p2 = 100;
+        free(p2); // free allocated memory to prevent memory leak
+    }
+
     out_of_bound_access(2048);
 
     return 0;

@@ -10,14 +10,24 @@ void out_of_bound_access(int data_len) {
 
     if (data_len > 100) {
         buf = malloc(100);
+        if (buf == NULL) {
+            // Handle memory allocation failure
+            return;
+        }
     }
 
-    memcpy(buf, data, data_len);
+    if (buf != NULL) {
+        memcpy(buf, data, (data_len < 100) ? data_len : 100);
+        free(buf);
+        buf = NULL;
+    }
 }
 */
 
 int main() {
-    int *p;
-    free(p);
+    int *p = NULL;
+    if (p != NULL) {
+        free(p);
+    }
     return 0;
 }
