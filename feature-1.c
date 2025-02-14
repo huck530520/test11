@@ -3,34 +3,54 @@
 #include <stdio.h>
 #include "typedef-1.h"
 
-
 void out_of_bound_access(int data_len) {
-    static uint8_t *buf = NULL;
-    char data[1024];
-    memset(data, '\0', 1024);
+  static uint8_t *buf = NULL;
+  char data[1024];
+  memset(data, '\0', 1024);
 
-    if (data_len > 100) {
-        buf = malloc(100);
+  if (data_len > 100) {
+    if (buf != NULL) {
+      free(buf);
     }
+    buf = malloc(100);
+    if (buf == NULL) {
+      // Handle memory allocation failure
+      printf("Memory allocation failed\n");
+      return;
+    }
+  }
 
+  if (buf != NULL && data_len <= 100) {
     memcpy(buf, data, data_len);
+  } else {
+    printf("Buffer not initialized or data length exceeds buffer size\n");
+  }
 }
 
 int main() {
-    int *p;
+  int *p;
+  p = malloc(sizeof(int));
+  if (p == NULL) {
+    // Handle memory allocation failure
+    printf("Memory allocation failed\n");
+    return 1;
+  }
+  *p = 0;
 
-    *p = 0;
-    // patch 1
-    // patch 3
-#pragma coverity compliance block deviate "UNINIT"
-    int *p2;
-    *p2 = 4;
-    int p4;
-    *p2 = 100;
-#pragma coverity compliance end_block "UNINIT"
+  int *p2 = malloc(sizeof(int));
+  if (p2 == NULL) {
+    // Handle memory allocation failure
+    printf("Memory allocation failed\n");
+    free(p);
+    return 1;
+  }
+  *p2 = 4;
+  *p2 = 100;
 
-    // test comment
-    out_of_bound_access(2048);
+  free(p);
+  free(p2);
 
-    return 0;
+  out_of_bound_access(50);
+
+  return 0;
 }
