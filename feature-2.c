@@ -18,6 +18,7 @@ void out_of_bound_access(int data_len) {
 
 int main() {
     int *p;
+    *p = 0;
     free(p);
     return 0;
 }
