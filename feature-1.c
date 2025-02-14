@@ -9,27 +9,47 @@ void out_of_bound_access(int data_len) {
     memset(data, '\0', 1024);
 
     if (data_len > 100) {
-        buf = malloc(100);
+        if (buf != NULL) {
+            free(buf);
+        }
+        buf = malloc(data_len); // Allocate enough space
+        if (buf == NULL) {
+            printf("Memory allocation failed\n");
+            return;
+        }
     }
 
-    memcpy(buf, data, data_len);
+    if (buf != NULL) {
+        memcpy(buf, data, data_len);
+    } else {
+        printf("Buffer not initialized\n");
+    }
 }
 
 int main() {
-    int *p;
-
-    //p = malloc(sizeof(int));
+    int *p = malloc(sizeof(int));
+    if (p == NULL) {
+        printf("Memory allocation failed\n");
+        return 1;
+    }
     *p = 0;
-    // patch 1
-    // patch 3
-#pragma coverity compliance block deviate "UNINIT"
-    int *p2;
-    *p2 = 4;
-    int p4;
-    *p2 = 100;
-#pragma coverity compliance end_block "UNINIT"
 
-    // test comment
+    int *p2 = malloc(sizeof(int));
+    if (p2 == NULL) {
+        printf("Memory allocation failed\n");
+        free(p);
+        return 1;
+    }
+    *p2 = 4;
+
+    int p4;
+    // Removed dereference of uninitialized pointer
+
+    *p2 = 100;
+
+    free(p);
+    free(p2);
+
     out_of_bound_access(2048);
 
     return 0;
