@@ -20,6 +20,7 @@ int main() {
     int *p;
 
     p = (int *)malloc(sizeof(int));
+
     *p = 0;
     // patch 1
     // patch 3
