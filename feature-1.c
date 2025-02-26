@@ -5,7 +5,6 @@
 int a, b;
 
 void out_of_bound_access(int data_len) {
-    static uint8_t *buf = NULL;
     char data[1024];
     memset(data, '\0', 1024);
 
