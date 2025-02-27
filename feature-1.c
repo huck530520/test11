@@ -8,6 +8,7 @@ void out_of_bound_access(int data_len) {
     char data[1024];
     char *buf;
 
+
     memset(data, '\0', 1024);
 
     if (data_len > 100) {
