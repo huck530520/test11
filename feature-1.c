@@ -1,39 +1,20 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
-
-int a, b;
-
-void out_of_bound_access(int data_len) {
-    char data[1024];
-    char *buf;
-
-
-    memset(data, '\0', 1024);
-
-    if (data_len > 100) {
-        buf = malloc(100);
-    }
-
-    memcpy(buf, data, data_len);
+int *p = NULL;
+if (p != NULL) {
+  *p = 0;
 }
-
-int main() {
-    int *p;
-
-    p = malloc(sizeof(int));
-    *p = 0;
-    // patch 1
-    // patch 3
+// patch 1
+// patch 3
 #pragma coverity compliance block deviate "UNINIT"
-    int *p2;
-    *p2 = 4;
-    int p4;
-    *p2 = 100;
+int *p2 = NULL;
+if (p2 != NULL) {
+  *p2 = 4;
+}
+int p4;
+if (p2 != NULL) {
+  *p2 = 100;
+}
 #pragma coverity compliance end_block "UNINIT"
 
-    // test comment
-    out_of_bound_access(2048);
-
-    return 0;
-}
+// test comment
+// out_of_bound_access(2048); // Commented out to prevent out-of-bounds access
+return 0;
