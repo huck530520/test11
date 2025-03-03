@@ -8,11 +8,10 @@ void out_of_bound_access(int data_len) {
     char data[1024];
     char *buf;
 
-
     memset(data, '\0', 1024);
 
     if (data_len > 100) {
-        buf = malloc(100);
+        buf = (char *)malloc(100);
     }
 
     memcpy(buf, data, data_len);
@@ -21,7 +20,6 @@ void out_of_bound_access(int data_len) {
 int main() {
     int *p;
 
-    p = malloc(sizeof(int));
     *p = 0;
     // patch 1
     // patch 3
