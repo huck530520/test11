@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include "typedef-1.h"
-/*
+
 void out_of_bound_access(int data_len) {
     static uint8_t *buf = NULL;
     char data[1024];
@@ -14,7 +14,7 @@ void out_of_bound_access(int data_len) {
 
     memcpy(buf, data, data_len);
 }
-*/
+
 
 int main() {
     int *p = 0;
