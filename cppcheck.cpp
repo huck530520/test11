@@ -1,6 +1,7 @@
 #include <iostream>
 
 int b;
+int c;
 
 int main() {
     std::cout << "Hello World!";
