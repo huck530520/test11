@@ -1,6 +1,6 @@
 #include <iostream>
 
-int b;
+int a, b;
 
 int main() {
     std::cout << "Hello World!";
