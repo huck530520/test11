@@ -1,5 +1,7 @@
 #include <iostream>
 
+int b;
+
 int main() {
     std::cout << "Hello World!";
     int *p;
