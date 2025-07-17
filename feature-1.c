@@ -25,15 +25,20 @@ int main() {
     *p = 0;
     // patch 1
     // patch 3
-#pragma coverity compliance block deviate "UNINIT"
-    int *p2;
+    #pragma coverity compliance block deviate "UNINIT"
+    int *p2 = malloc(sizeof(int));
+    if (p2 == NULL) {
+        free(p);
+        return -1;
+    }
     *p2 = 4;
-    int p4;
     *p2 = 100;
-#pragma coverity compliance end_block "UNINIT"
+    #pragma coverity compliance end_block "UNINIT"
 
     // test comment
-    out_of_bound_access(2048);
+    out_of_bound_access(1024);
 
+    free(p2);
+    free(p);
     return 0;
 }
