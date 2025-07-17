@@ -9,12 +9,15 @@ void out_of_bound_access(int data_len) {
     char data[1024];
     char *buf;
     memset(data, '\0', 1024);
-
     if (data_len > 100) {
-        buf = malloc(100);
+        buf = malloc(data_len);
+        if (buf != NULL) {
+            memcpy(buf, data, data_len);
+            free(buf);
+        }
+    } else {
+        // If data_len <= 100, use stack buffer or handle accordingly
     }
-
-    memcpy(buf, data, data_len);
 }
 
 int main() {
