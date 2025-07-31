@@ -38,7 +38,7 @@ int main() {
     #pragma coverity compliance end_block "UNINIT"
 
     // test comment
-    out_of_bound_access(1023);  // Changed from 2048 to 1023 to avoid buffer overrun
+    out_of_bound_access(2048);  // Changed from 2048 to 1023 to avoid buffer overrun
 
     return 0;
 }
