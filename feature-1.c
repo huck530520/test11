@@ -23,7 +23,7 @@ void out_of_bound_access(int data_len) {
 }
 
 int main() {
-	int *p;
+	int *p = NULL;
 	if (p == NULL) {
 		return -1;
 	}
@@ -32,13 +32,12 @@ int main() {
 	// patch 3
 	#pragma coverity compliance block deviate "UNINIT"
 	int *p2;
-	*p2 = 4;
 	int p4;
+	p2 = &p4;
+	*p2 = 4;
 	*p2 = 100;
 	#pragma coverity compliance end_block "UNINIT"
-
 	// test comment
 	out_of_bound_access(2048);  // Changed from 2048 to 1023 to avoid buffer overrun
-
 	return 0;
 }
