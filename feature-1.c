@@ -23,7 +23,7 @@ void out_of_bound_access(int data_len) {
 }
 
 int main() {
-	int *p;
+	int *p = NULL;
 	if (p == NULL) {
 		return -1;
 	}
