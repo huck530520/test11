@@ -8,3 +8,4 @@ test2-4
 test3-1
 test/hsinyulu/1:aaa
 test/hsinyulu/2:bbb
+test/hsinyulu/2:ccc
